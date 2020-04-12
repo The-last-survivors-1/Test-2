@@ -1,0 +1,184 @@
+Program 1:
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace array_basic
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] num = new int[10] {1,2,3,4,5,6,7,8,9,10};
+
+            for (int i = 0; i < 10; i++)
+            {
+                if (num[i] % 5 == 0)
+                {
+                    Console.WriteLine(num[i]);
+                }
+                else {
+
+                    continue;
+                }
+                
+            }
+        }
+    }
+}
+
+
+
+
+
+2nd program
+
+
+
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace chessboard
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            for (int i = 1; i <= 8; i++) {
+
+                if (i % 2 != 0)
+                {
+
+                    for (int j = 1; j <= 8; j++)
+                    {
+                        if (j % 2 == 0)
+                        {
+
+                            Console.Write("O");
+                        }
+                        else
+                        {
+                            Console.Write("X");
+                        }
+
+
+                    }
+
+                }
+
+
+                else {
+
+                    for (int j = 1; j <= 8; j++)
+                    {
+                        if (j % 2 == 0)
+                        {
+
+                            Console.Write("X");
+                        }
+                        else
+                        {
+                            Console.Write("O");
+                        }
+
+
+                    }
+
+
+
+                }
+                
+
+                Console.WriteLine();
+            }
+
+               
+            Console.WriteLine();
+        }
+    }
+}
+
+
+
+
+
+3rd program:
+
+
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace array_2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] num = new int[10] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            int[] even = new int[5];
+            int[] odd = new int[5];
+            int k = 0;
+            int l = 0;
+           
+
+            for (int i = 0; i < 10; i++)
+            {
+                 
+                if (num[i] % 2 == 0)
+                {
+                    
+                    even[k] = num[i];
+                Console.WriteLine(num[i] + ":   is Even");
+                k++;
+                
+                }
+                else 
+                {
+                   
+                    odd[l] = num[i];
+                    Console.WriteLine(num[i] + ":  is Odd");
+                    l++;
+                    
+                    
+                }
+
+               
+
+            }
+
+            Console.WriteLine("Even numbers are: ");
+            for (int i = 0; i < 5; i++)
+            {
+
+                Console.WriteLine(even[i]);
+            }
+
+
+
+            Console.WriteLine("Odd numbers are: ");
+            for (int i = 0; i < 5; i++)
+            {
+
+                Console.WriteLine(odd[i]);
+            }
+
+
+
+
+        }
+    }
+}
+
